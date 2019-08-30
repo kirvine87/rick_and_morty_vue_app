@@ -1,14 +1,20 @@
 <template lang="html">
-  <div>
+  <div @click="handleCharacterClick">
   <li>{{character.name}}</li>
   <img :src="character.image" />
   </div>
 </template>
 
 <script>
+import {eventBus} from '@/main.js'
 export default {
   name: 'character-list-item',
-  props: ['character']
+  props: ['character'],
+  methods:{
+    handleCharacterClick() {
+      eventBus.$emit('character-selected', this.character)
+    }
+  }
 }
 </script>
 
@@ -31,5 +37,3 @@ export default {
 
 
 </style>
-
-<!-- {{character.status}} {{character.species}} {{character.gender}} {{character.origin.name}} -->
