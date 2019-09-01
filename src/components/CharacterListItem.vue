@@ -24,13 +24,19 @@ export default {
     width: 100px;
   }
 
+  div {
+    border: 2px solid green;
+    background-color: skyblue;
+  }
+
   div:hover {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   li {
     display: flex;
     width: 150px;
+    height: 40px;
     text-decoration: none;
     list-style-type: none;
   }

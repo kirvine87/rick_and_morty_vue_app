@@ -5,6 +5,7 @@
     <p>Species: {{character.species}}</p>
     <p>Gender: {{character.gender}}</p>
     <p>Origin: {{character.origin.name}}</p>
+    <p><router-link :to="{ name: 'episode' }">See Episodes</router-link></P>
   </div>
 </template>
 
@@ -16,4 +17,13 @@ export default {
 </script>
 
 <style lang="css" scoped>
+  div {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+  }
+  h2, p {
+    text-align: center;
+    color: green;
+  }
 </style>

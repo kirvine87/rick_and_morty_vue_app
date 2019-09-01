@@ -2,20 +2,22 @@
   <div id="view">
     <Header />
     <CharacterView />
+    <router-view id="view"/>
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header'
-import CharacterView from '@/views/CharacterView'
 export default {
   name: 'app',
   components: {
-    CharacterView,
     Header
   }
 }
 </script>
 
 <style lang="css" scoped>
+  #view {
+    background-color: black;
+  }
 </style>

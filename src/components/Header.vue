@@ -1,6 +1,7 @@
 <template lang="html">
   <div id="header-container">
-    <h1>Wubbalubbadubdub!</h1>
+    <h1>Wubbalubbadubdub! </h1>
+    <router-link id="link" :to="{ name: 'character' }">Back To Characters</router-link>
   </div>
 </template>
 
@@ -11,6 +12,13 @@ export default {
 
 <style lang="css" scoped>
   h1 {
+    display: flex;
+    justify-content: center;
+    color: green;
+  }
+
+  #link {
+    font-size: 30px;
     display: flex;
     justify-content: center;
   }
