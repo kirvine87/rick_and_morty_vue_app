@@ -5,7 +5,7 @@
     <p>Species: {{character.species}}</p>
     <p>Gender: {{character.gender}}</p>
     <p>Origin: {{character.origin.name}}</p>
-    <p><router-link :to="{ name: 'episode' }">See Episodes</router-link></P>
+    <p><router-link :to="{ name: 'episode', params: {character} }">See Episodes</router-link></P>
   </div>
 </template>
 

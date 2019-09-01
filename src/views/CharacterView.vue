@@ -2,6 +2,7 @@
   <div id="view" v-if="characters.length">
     <CharacterDetail v-if="selectedCharacter" :character="selectedCharacter" />
     <CharacterList :characters="characters"  />
+    <p>{{episode}}</p>
   </div>
 </template>
 
@@ -31,7 +32,7 @@ export default {
     CharacterDetail
   }
 }
-</script> 
+</script>
 
 <style lang="css" scoped>
 
